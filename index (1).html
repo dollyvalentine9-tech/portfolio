@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}</style>
+<title>Valentine Dolly | Primary School Teacher &amp; ICT Enthusiast</title>
+<meta name="description" content="Valentine Dolly is a trained primary school teacher from Murang’a Teachers College with six months of classroom experience at Kiboi Primary School and practical skills in ICT integration and AI tools.">
+<meta name="theme-color" content="#0B1F3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout concept: airy white pages with a navy "Experience" band and a navy closing "Contact" band, joined by a sticky nav. */
+:root {
+  --navy: #0B1F3A;
+  --navy-2: #13335E;
+  --teal: #12A5A8;
+  --teal-ink: #0A7479;
+  --teal-lt: #5EE0D0;
+  --mist: #F2F6FA;
+  --white: #FFFFFF;
+  --line: #DCE5EE;
+  --ink: #0B1F3A;
+  --muted: #475A70;
+  --on-navy: #C3D0E0;
+  --font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --shadow: 0 1px 2px rgba(11, 31, 58, .06), 0 14px 34px -14px rgba(11, 31, 58, .22);
+  --header-h: 68px;
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img, svg { max-width: 100%; }
+[hidden] { display: none !important; }
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { text-wrap: balance; line-height: 1.15; letter-spacing: -0.02em; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--teal-ink);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+.on-dark a:focus-visible, .on-dark button:focus-visible { outline-color: var(--teal-lt); }
+
+.wrap {
+  width: 100%;
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+@media (min-width: 640px) { .wrap { padding-left: max(28px, env(safe-area-inset-left, 0px)); padding-right: max(28px, env(safe-area-inset-right, 0px)); } }
+
+.ic { width: 1.25em; height: 1.25em; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+.skip {
+  position: absolute; left: 16px; top: -60px; z-index: 100;
+  background: var(--navy); color: #fff; padding: 10px 16px; border-radius: 10px; font-weight: 600; text-decoration: none;
+}
+.skip:focus { top: calc(env(safe-area-inset-top, 0px) + 12px); }
+
+/* ---------- Header ---------- */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); background: var(--white); z-index: 40; }
+.site-header {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50;
+  background: rgba(255, 255, 255, .92);
+  -webkit-backdrop-filter: saturate(160%) blur(12px); backdrop-filter: saturate(160%) blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.header-in { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: var(--header-h); }
+.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; font-weight: 700; letter-spacing: -0.01em; min-width: 0; }
+.brand-mark {
+  width: 40px; height: 40px; border-radius: 12px; background: var(--navy); color: #fff;
+  display: grid; place-items: center; font-size: .95rem; font-weight: 800; letter-spacing: .02em; flex: none;
+}
+.brand-name { white-space: nowrap; }
+.nav { display: flex; align-items: center; gap: 6px; }
+.nav a {
+  text-decoration: none; font-weight: 600; font-size: .95rem; color: var(--muted);
+  padding: 8px 14px; border-radius: 999px; transition: color .2s, background-color .2s;
+}
+.nav a:hover { color: var(--ink); background: var(--mist); }
+.nav a[aria-current="true"] { color: var(--ink); background: var(--mist); }
+.nav a.nav-cta { background: var(--navy); color: #fff; margin-left: 6px; }
+.nav a.nav-cta:hover { background: var(--navy-2); }
+.menu-btn {
+  display: none; width: 44px; height: 44px; border-radius: 12px; border: 1px solid var(--line);
+  background: var(--white); color: var(--ink); cursor: pointer; place-items: center; font-size: 1.1rem;
+}
+.menu-panel {
+  position: absolute; left: 0; right: 0; top: 100%;
+  background: var(--white); border-bottom: 1px solid var(--line); box-shadow: 0 24px 40px -24px rgba(11, 31, 58, .3);
+}
+.menu-panel .wrap { display: grid; gap: 4px; padding-block: 12px 18px; }
+.menu-panel a { text-decoration: none; font-weight: 600; padding: 14px 12px; border-radius: 12px; }
+.menu-panel a:hover { background: var(--mist); }
+.menu-panel a.nav-cta { background: var(--navy); color: #fff; text-align: center; margin-top: 6px; }
+@media (max-width: 820px) {
+  .nav { display: none; }
+  .menu-btn { display: grid; }
+}
+@media (min-width: 821px) { .menu-panel { display: none !important; } }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 14px 24px; border-radius: 14px; font: inherit; font-weight: 700; font-size: 1rem; line-height: 1.2;
+  text-decoration: none; cursor: pointer; border: 1.5px solid transparent;
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-navy { background: var(--navy); color: #fff; box-shadow: 0 10px 24px -12px rgba(11, 31, 58, .6); }
+.btn-navy:hover { background: var(--navy-2); }
+.btn-teal { background: var(--teal); color: var(--navy); box-shadow: 0 10px 24px -12px rgba(18, 165, 168, .7); }
+.btn-teal:hover { background: #17B7BA; }
+.btn-lt { background: var(--teal-lt); color: var(--navy); }
+.btn-lt:hover { background: #7BEADC; }
+.btn-line { background: transparent; color: #fff; border-color: rgba(255, 255, 255, .35); }
+.btn-line:hover { background: rgba(255, 255, 255, .08); border-color: rgba(255, 255, 255, .6); }
+
+/* ---------- Common section parts ---------- */
+section { scroll-margin-top: calc(var(--header-h) + 8px); }
+.sec { padding-block: clamp(64px, 9vw, 112px); }
+.sec-mist { background: var(--mist); }
+.sec-navy { background: var(--navy); color: #fff; position: relative; overflow: hidden; }
+.kicker {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: .8rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--teal-ink);
+  margin-bottom: 14px;
+}
+.sec-navy .kicker { color: var(--teal-lt); }
+h2 { font-size: clamp(1.85rem, 3.6vw, 2.65rem); font-weight: 800; }
+.lead { color: var(--muted); max-width: 62ch; }
+.sec-navy .lead { color: var(--on-navy); }
+.sec-head { margin-bottom: clamp(32px, 5vw, 52px); max-width: 720px; }
+
+/* entrance + scroll reveals (content is always visible at rest) */
+@keyframes rise { from { transform: translateY(16px); } to { transform: none; } }
+.rise { animation: rise .7s cubic-bezier(.2, .7, .2, 1) both; }
+.rise.d1 { animation-delay: .08s; } .rise.d2 { animation-delay: .16s; } .rise.d3 { animation-delay: .24s; } .rise.d4 { animation-delay: .32s; }
+.js .reveal:not(.in) { transform: translateY(14px); }
+.reveal { transition: transform .6s cubic-bezier(.2, .7, .2, 1); }
+
+/* ---------- Hero ---------- */
+.hero { position: relative; overflow: hidden; padding-block: clamp(40px, 7vw, 88px) clamp(56px, 8vw, 104px); }
+.hero-deco { position: absolute; pointer-events: none; z-index: 0; }
+.hero-deco.blob { width: 620px; height: 620px; border-radius: 50%; right: -200px; top: -240px; background: radial-gradient(circle at 40% 40%, rgba(18, 165, 168, .16), rgba(18, 165, 168, 0) 68%); }
+.hero-deco.grid {
+  left: -40px; bottom: -30px; width: 340px; height: 220px;
+  background-image: radial-gradient(rgba(11, 31, 58, .18) 1.4px, transparent 1.6px); background-size: 22px 22px;
+  -webkit-mask-image: linear-gradient(135deg, #000 0%, transparent 75%); mask-image: linear-gradient(135deg, #000 0%, transparent 75%);
+}
+.hero-deco.sq { width: 120px; height: 120px; border: 2px solid rgba(18, 165, 168, .35); border-radius: 28px; transform: rotate(18deg); left: 46%; top: 54px; }
+.hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); gap: clamp(36px, 6vw, 80px); align-items: center; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px; border-radius: 999px;
+  background: var(--mist); border: 1px solid var(--line);
+  font-size: .75rem; font-weight: 700; letter-spacing: .14em; color: var(--teal-ink);
+}
+.eyebrow i { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); display: block; }
+.hero h1 { font-size: clamp(2.3rem, 5.4vw, 4.1rem); font-weight: 800; margin-top: 22px; letter-spacing: -0.03em; line-height: 1.06; }
+.hero h1 em { font-style: normal; color: var(--teal-ink); }
+.hero .intro { margin-top: 22px; font-size: 1.15rem; color: var(--muted); max-width: 56ch; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+.hero-phone { margin-top: 26px; display: flex; align-items: center; gap: 12px; font-weight: 600; }
+.hero-phone .tile { width: 40px; height: 40px; border-radius: 12px; background: var(--mist); border: 1px solid var(--line); display: grid; place-items: center; color: var(--teal-ink); }
+.hero-phone small { display: block; font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); line-height: 1.2; }
+.hero-phone span.num { font-size: 1.1rem; letter-spacing: .01em; font-variant-numeric: tabular-nums; user-select: all; }
+
+.portrait-wrap { position: relative; justify-self: center; width: 100%; max-width: 420px; }
+.portrait {
+  position: relative; aspect-ratio: 4 / 5; max-width: 100%; border-radius: 36px; overflow: hidden;
+  background: var(--navy); box-shadow: 0 30px 60px -28px rgba(11, 31, 58, .55);
+}
+.portrait svg, .portrait img { display: block; width: 100%; height: 100%; }
+.portrait img { object-fit: cover; }
+.portrait-ring { position: absolute; inset: 14px -14px -14px 14px; border: 2px solid rgba(18, 165, 168, .45); border-radius: 36px; z-index: -1; }
+.chip-float {
+  position: absolute; display: inline-flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 14px;
+  background: var(--white); box-shadow: var(--shadow); border: 1px solid var(--line); font-size: .82rem; font-weight: 700; line-height: 1.25;
+}
+.chip-float .ic { color: var(--teal-ink); font-size: 1.15rem; }
+.chip-a { left: -22px; top: 36px; }
+.chip-b { right: -18px; bottom: 34px; }
+@media (max-width: 880px) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr); }
+  .portrait-wrap { max-width: 360px; }
+  .hero-deco.sq { display: none; }
+}
+@media (max-width: 480px) {
+  .chip-a { left: 10px; top: 12px; }
+  .chip-b { right: 10px; bottom: 12px; }
+  .portrait-ring { display: none; }
+}
+
+/* ---------- About ---------- */
+.about-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(32px, 6vw, 80px); align-items: start; }
+.about-copy p + p { margin-top: 18px; }
+.about-copy p { color: var(--muted); max-width: 62ch; }
+.about-copy p:first-of-type { color: var(--ink); }
+.highlights { display: grid; gap: 14px; }
+.hl {
+  display: flex; align-items: center; gap: 16px; padding: 18px 20px; background: var(--white);
+  border: 1px solid var(--line); border-radius: 18px; font-weight: 700; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.hl:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: transparent; }
+.ico-tile { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; background: rgba(18, 165, 168, .12); color: var(--teal-ink); flex: none; font-size: 1.3rem; }
+@media (max-width: 880px) { .about-grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Education ---------- */
+.edu-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(28px, 6vw, 72px); align-items: start; }
+.timeline { position: relative; padding-left: 36px; }
+.timeline::before { content: ""; position: absolute; left: 15px; top: 24px; bottom: -8px; width: 2px; background: linear-gradient(var(--teal), rgba(18, 165, 168, 0)); }
+.t-node { position: absolute; left: 0; top: 20px; width: 32px; height: 32px; border-radius: 50%; background: var(--teal); color: var(--navy); display: grid; place-items: center; box-shadow: 0 0 0 6px var(--mist); font-size: 1rem; }
+.edu-card { background: var(--white); border: 1px solid var(--line); border-radius: 24px; padding: clamp(22px, 3vw, 34px); box-shadow: var(--shadow); display: flex; gap: 20px; align-items: flex-start; }
+.edu-card .ico-tile { width: 56px; height: 56px; font-size: 1.6rem; }
+.edu-card h3 { font-size: clamp(1.25rem, 2.2vw, 1.5rem); font-weight: 800; }
+.edu-card .inst { color: var(--muted); font-weight: 500; margin-top: 6px; }
+.pill {
+  display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; padding: 7px 14px; border-radius: 999px;
+  background: rgba(18, 165, 168, .12); color: var(--teal-ink); font-weight: 700; font-size: .88rem;
+}
+.pill i { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); display: block; }
+@media (max-width: 880px) { .edu-grid { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 480px) { .edu-card { flex-direction: column; } }
+
+/* ---------- Experience ---------- */
+.sec-navy .deco-ring { position: absolute; width: 520px; height: 520px; border-radius: 50%; border: 1.5px solid rgba(255, 255, 255, .07); right: -160px; top: -180px; pointer-events: none; }
+.sec-navy .deco-ring.two { width: 340px; height: 340px; right: -70px; top: -90px; }
+.sec-navy .wrap { position: relative; z-index: 1; }
+.xp-card { background: rgba(255, 255, 255, .05); border: 1px solid rgba(255, 255, 255, .14); border-radius: 28px; padding: clamp(24px, 4vw, 44px); }
+.xp-top { display: flex; flex-wrap: wrap; gap: 18px 32px; justify-content: space-between; align-items: flex-start; padding-bottom: 28px; border-bottom: 1px solid rgba(255, 255, 255, .14); }
+.xp-top h3 { font-size: clamp(1.35rem, 2.6vw, 1.9rem); font-weight: 800; max-width: 22ch; }
+.xp-top h3 span { display: block; color: var(--teal-lt); font-size: .62em; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 10px; }
+.xp-meta { display: flex; flex-wrap: wrap; gap: 10px; }
+.meta-pill { display: inline-flex; align-items: center; gap: 10px; padding: 10px 16px; border-radius: 14px; background: rgba(255, 255, 255, .08); font-size: .92rem; font-weight: 600; }
+.meta-pill .ic { color: var(--teal-lt); }
+.xp-list { list-style: none; margin: 28px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.xp-list li { display: flex; gap: 16px; align-items: flex-start; padding: 18px; border-radius: 18px; background: rgba(255, 255, 255, .04); border: 1px solid rgba(255, 255, 255, .08); color: #E6EDF6; transition: background-color .25s, transform .25s; }
+.xp-list li:hover { background: rgba(255, 255, 255, .09); transform: translateY(-2px); }
+.xp-list .ico-tile { width: 42px; height: 42px; font-size: 1.15rem; background: rgba(94, 224, 208, .14); color: var(--teal-lt); border-radius: 12px; }
+.xp-list p { font-size: .98rem; line-height: 1.6; }
+@media (max-width: 760px) { .xp-list { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Skills ---------- */
+.group-title { font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 18px; display: flex; align-items: center; gap: 12px; }
+.group-title::after { content: ""; height: 1px; background: var(--line); flex: 1; }
+.skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 16px; }
+.skill {
+  display: flex; flex-direction: column; gap: 18px; padding: 24px; border: 1px solid var(--line); border-radius: 22px; background: var(--white);
+  font-weight: 700; font-size: 1.05rem; line-height: 1.3; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.skill:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: transparent; }
+.skill .ico-tile { width: 52px; height: 52px; font-size: 1.45rem; }
+.tags { display: flex; flex-wrap: wrap; gap: 10px; }
+.tag { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 999px; background: var(--mist); border: 1px solid var(--line); font-weight: 600; font-size: .95rem; transition: background-color .2s, border-color .2s, transform .2s; }
+.tag .ic { color: var(--teal-ink); font-size: .95rem; stroke-width: 2.4; }
+.tag:hover { background: #E6F6F6; border-color: rgba(18, 165, 168, .4); transform: translateY(-1px); }
+.skills-stack { display: grid; gap: clamp(32px, 5vw, 48px); }
+.statement { margin-top: clamp(36px, 6vw, 60px); padding: clamp(26px, 4vw, 44px); border-radius: 28px; background: var(--navy); color: #fff; font-size: clamp(1.2rem, 2.4vw, 1.6rem); font-weight: 600; line-height: 1.45; letter-spacing: -0.01em; text-wrap: balance; }
+.statement strong { color: var(--teal-lt); font-weight: 700; }
+
+/* ---------- Languages ---------- */
+.lang-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 22px 40px; padding: clamp(22px, 3vw, 32px); border: 1px solid var(--line); border-radius: 24px; }
+.lang-row h2 { font-size: clamp(1.4rem, 2.4vw, 1.8rem); }
+.lang-pills { display: flex; flex-wrap: wrap; gap: 12px; }
+.lang-pill { display: inline-flex; align-items: center; gap: 10px; padding: 12px 22px; border-radius: 999px; background: var(--mist); border: 1px solid var(--line); font-weight: 700; }
+.lang-pill .ic { color: var(--teal-ink); }
+
+/* ---------- Referees ---------- */
+.ref-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.ref { background: var(--white); border: 1px solid var(--line); border-radius: 24px; padding: clamp(22px, 3vw, 32px); display: grid; gap: 22px; transition: box-shadow .25s ease, transform .25s ease; }
+.ref:hover { box-shadow: var(--shadow); transform: translateY(-3px); }
+.ref-top { display: flex; gap: 16px; align-items: center; }
+.avatar { width: 56px; height: 56px; border-radius: 50%; background: var(--navy); color: #fff; display: grid; place-items: center; font-weight: 800; letter-spacing: .03em; flex: none; }
+.ref h3 { font-size: 1.25rem; font-weight: 800; }
+.ref .role { color: var(--muted); font-size: .96rem; line-height: 1.45; margin-top: 4px; }
+.ref-phone { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; font-weight: 700; padding: 12px 16px; border-radius: 14px; background: var(--mist); border: 1px solid var(--line); width: fit-content; max-width: 100%; transition: background-color .2s, border-color .2s; }
+.ref-phone .ic { color: var(--teal-ink); }
+.ref-phone span { font-variant-numeric: tabular-nums; letter-spacing: .01em; }
+.ref-phone:hover { background: #E6F6F6; border-color: rgba(18, 165, 168, .45); }
+@media (max-width: 760px) { .ref-grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Contact ---------- */
+.contact { padding-block: clamp(72px, 10vw, 128px); }
+.contact h2 { font-size: clamp(2.2rem, 5.2vw, 3.8rem); letter-spacing: -0.03em; max-width: 16ch; }
+.contact .lead { margin-top: 22px; font-size: 1.15rem; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+.contact-list { margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 14px; max-width: 760px; }
+.c-row { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 18px; background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .14); min-width: 0; }
+.c-row .ico-tile { background: rgba(94, 224, 208, .14); color: var(--teal-lt); width: 44px; height: 44px; font-size: 1.2rem; }
+.c-text { min-width: 0; flex: 1; }
+.c-text small { display: block; font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--on-navy); line-height: 1.3; }
+.c-text span.val { display: block; font-weight: 700; overflow-wrap: anywhere; user-select: all; line-height: 1.35; margin-top: 2px; }
+.copy-btn { flex: none; display: inline-flex; align-items: center; gap: 8px; padding: 9px 12px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, .25); background: transparent; color: #fff; font: inherit; font-size: .85rem; font-weight: 600; cursor: pointer; transition: background-color .2s, border-color .2s; }
+.copy-btn:hover { background: rgba(255, 255, 255, .1); border-color: rgba(255, 255, 255, .5); }
+.copy-status { margin-top: 14px; min-height: 1.5em; font-size: .92rem; color: var(--teal-lt); font-weight: 600; }
+
+.site-footer { background: #07162B; color: var(--on-navy); padding-block: 28px calc(28px); text-align: center; font-size: .92rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .js .reveal:not(.in) { transform: none; }
+}
+</style>
+
+</head>
+<body>
+<!-- Icon sprite (Lucide-style line icons, inlined so no extra requests are needed) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 12h16M4 6h16M4 18h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6M10 22h4"/></symbol>
+    <symbol id="i-laptop" viewBox="0 0 24 24"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></symbol>
+    <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></symbol>
+    <symbol id="i-clip" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
+    <symbol id="i-msg" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/></symbol>
+    <symbol id="i-lang" viewBox="0 0 24 24"><path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v4M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4M22 5h-4M4 17v2M5 18H3"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HEADER / NAVIGATION ============ -->
+<header class="site-header" id="top">
+  <div class="wrap header-in">
+    <a class="brand" href="#top" aria-label="Valentine Dolly, back to top">
+      <span class="brand-mark" aria-hidden="true">VD</span>
+      <span class="brand-name">Valentine Dolly</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu-panel" aria-label="Open menu">
+      <svg class="ic ic-open" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg class="ic ic-close" aria-hidden="true" hidden><use href="#i-x"/></svg>
+    </button>
+  </div>
+  <div class="menu-panel" id="menu-panel" hidden>
+    <div class="wrap">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ 2. HERO ============ -->
+<section class="hero" aria-labelledby="hero-title">
+  <span class="hero-deco blob" aria-hidden="true"></span>
+  <span class="hero-deco grid" aria-hidden="true"></span>
+  <span class="hero-deco sq" aria-hidden="true"></span>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow rise"><i aria-hidden="true"></i>PRIMARY EDUCATOR | ICT &amp; AI ENTHUSIAST</p>
+      <h1 id="hero-title" class="rise d1">Helping Every Learner Grow, <em>One Lesson at a Time.</em></h1>
+      <p class="intro rise d2">Hello, I'm Valentine Dolly — a dedicated primary school teacher passionate about creating engaging learning experiences through thoughtful teaching, creativity, and technology.</p>
+      <div class="hero-actions rise d3">
+        <a class="btn btn-navy" href="#experience">View My Experience <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-teal" href="mailto:dollyvalentine9@gmail.com">Contact Me <svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></a>
+      </div>
+      <p class="hero-phone rise d4">
+        <span class="tile" aria-hidden="true"><svg class="ic"><use href="#i-phone"/></svg></span>
+        <span><small>Phone</small><span class="num">0115839771</span></span>
+      </p>
+    </div>
+
+    <!-- To use your own photo: set PORTRAIT near the bottom of this file (see the README). -->
+    <div class="portrait-wrap rise d2">
+      <div class="portrait-ring" aria-hidden="true"></div>
+      <figure class="portrait" style="margin:0">
+        <img id="portrait-img" alt="Portrait of Valentine Dolly" width="420" height="525" hidden>
+        <svg id="portrait-art" viewBox="0 0 400 500" role="img" aria-label="Illustration of a graduation cap above an open book, with sparkles suggesting technology in learning" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.3" fill="#FFFFFF" fill-opacity=".14"/></pattern>
+            <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#13335E"/><stop offset="1" stop-color="#0B1F3A"/></linearGradient>
+          </defs>
+          <rect width="400" height="500" fill="url(#glow)"/>
+          <rect width="400" height="500" fill="url(#dots)"/>
+          <circle cx="340" cy="70" r="150" fill="#13335E"/>
+          <circle cx="40" cy="480" r="150" fill="#12A5A8" fill-opacity=".22"/>
+          <!-- circuit lines -->
+          <g fill="none" stroke="#5EE0D0" stroke-opacity=".55" stroke-width="2" stroke-linecap="round">
+            <path d="M340 392 H372 V330 H388"/>
+            <path d="M60 392 H30 V330 H14"/>
+          </g>
+          <circle cx="388" cy="330" r="4" fill="#5EE0D0"/>
+          <circle cx="14" cy="330" r="4" fill="#5EE0D0"/>
+          <!-- sparkles -->
+          <g fill="#5EE0D0">
+            <path transform="translate(326 150)" d="M0 -16 Q0 0 16 0 Q0 0 0 16 Q0 0 -16 0 Q0 0 0 -16Z"/>
+            <path transform="translate(88 118) scale(.7)" d="M0 -16 Q0 0 16 0 Q0 0 0 16 Q0 0 -16 0 Q0 0 0 -16Z"/>
+            <path transform="translate(352 238) scale(.5)" d="M0 -16 Q0 0 16 0 Q0 0 0 16 Q0 0 -16 0 Q0 0 0 -16Z"/>
+          </g>
+          <!-- cap -->
+          <path d="M146 196 V240 C146 262 254 262 254 240 V196 L200 218 Z" fill="#0E8588"/>
+          <path d="M200 128 L296 170 L200 212 L104 170 Z" fill="#12A5A8"/>
+          <path d="M296 170 V232" stroke="#5EE0D0" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="296" cy="238" r="7" fill="#5EE0D0"/>
+          <!-- book -->
+          <ellipse cx="200" cy="474" rx="150" ry="12" fill="#000000" fill-opacity=".25"/>
+          <path d="M54 346 V450 C108 434 163 440 200 464 C237 440 292 434 346 450 V346 L334 338 V438 C288 422 237 426 200 450 C163 426 112 422 66 438 V338 Z" fill="#12A5A8"/>
+          <path d="M200 350 C165 326 112 322 66 338 V438 C112 422 165 426 200 450 Z" fill="#F2F6FA"/>
+          <path d="M200 350 C235 326 288 322 334 338 V438 C288 422 237 426 200 450 Z" fill="#E4ECF4"/>
+          <path d="M200 350 V450" stroke="#B9C9DA" stroke-width="2"/>
+          <g fill="none" stroke="#9FB4C9" stroke-width="3" stroke-linecap="round">
+            <path d="M92 366 C120 360 148 362 176 374"/>
+            <path d="M92 384 C120 378 148 380 176 392"/>
+            <path d="M92 402 C120 396 148 398 176 410"/>
+            <path d="M224 374 C252 362 280 360 308 366"/>
+            <path d="M224 392 C252 380 280 378 308 384"/>
+          </g>
+        </svg>
+      </figure>
+      <div class="chip-float chip-a"><svg class="ic" aria-hidden="true"><use href="#i-spark"/></svg><span>ICT &amp; AI in the classroom</span></div>
+      <div class="chip-float chip-b"><svg class="ic" aria-hidden="true"><use href="#i-cap"/></svg><span>Murang’a Teachers College</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. ABOUT ============ -->
+<section class="sec" id="about" aria-labelledby="about-title">
+  <div class="wrap about-grid">
+    <div class="about-copy reveal">
+      <p class="kicker">About</p>
+      <h2 id="about-title" style="margin-bottom:26px">A Little About Me</h2>
+      <p>I am a primary school teacher trained at Murang’a Teachers College and currently awaiting graduation. During my six-month teaching placement at Kiboi Primary School, I gained practical experience in lesson planning, classroom management, preparing teaching aids, and supporting learners with different needs.</p>
+      <p>I am patient, honest, and self-motivated. I enjoy finding fresh ways to make lessons clearer and more engaging, including using ICT and AI tools where appropriate. I am looking for a primary school where I can continue growing professionally while giving my best to every learner.</p>
+    </div>
+    <div class="highlights reveal" role="list">
+      <div class="hl" role="listitem"><span class="ico-tile" aria-hidden="true"><svg class="ic"><use href="#i-users"/></svg></span>Learner-centred teaching</div>
+      <div class="hl" role="listitem"><span class="ico-tile" aria-hidden="true"><svg class="ic"><use href="#i-bulb"/></svg></span>Creative learning experiences</div>
+      <div class="hl" role="listitem"><span class="ico-tile" aria-hidden="true"><svg class="ic"><use href="#i-laptop"/></svg></span>Technology-enhanced education</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. EDUCATION ============ -->
+<section class="sec sec-mist" id="education" aria-labelledby="edu-title">
+  <div class="wrap edu-grid">
+    <div class="reveal">
+      <p class="kicker">Education</p>
+      <h2 id="edu-title">Where I Trained</h2>
+    </div>
+    <div class="timeline reveal">
+      <span class="t-node" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span>
+      <article class="edu-card">
+        <span class="ico-tile" aria-hidden="true"><svg class="ic"><use href="#i-cap"/></svg></span>
+        <div>
+          <h3>Diploma in Primary Teacher Education</h3>
+          <p class="inst">Murang’a Teachers College</p>
+          <p class="pill"><i aria-hidden="true"></i>Status: Awaiting graduation</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. EXPERIENCE ============ -->
+<section class="sec sec-navy on-dark" id="experience" aria-labelledby="xp-title">
+  <span class="deco-ring" aria-hidden="true"></span><span class="deco-ring two" aria-hidden="true"></span>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker">Experience</p>
+      <h2 id="xp-title">Experience in the Classroom</h2>
+    </div>
+    <article class="xp-card reveal">
+      <div class="xp-top">
+        <h3><span>Teaching Placement</span>Kiboi Primary School</h3>
+        <div class="xp-meta">
+          <p class="meta-pill"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg>January–March and May–July 2026</p>
+          <p class="meta-pill"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Six months in total</p>
+        </div>
+      </div>
+      <ul class="xp-list">
+        <li><span class="ico-tile" aria-hidden="true"><svg class="ic"><use href="#i-book"/></svg></span><p>Planned lessons and taught primary school classes using clear explanations and practical examples.</p></li>
+        <li><span class="ico-tile" aria-hidden="true"><svg class="ic"><use href="#i-bulb"/></svg></span><p>Prepared and used teaching aids to help learners understand concepts.</p></li>
+        <li><span class="ico-tile" aria-hidden="true"><svg class="ic"><use href="#i-users"/></svg></span><p>Maintained an orderly classroom, encouraged good behaviour, and gave learners opportunities to participate.</p></li>
+        <li><span class="ico-tile" aria-hidden="true"><svg class="ic"><use href="#i-clip"/></svg></span><p>Marked learners’ work, monitored progress, and supported those who needed additional help.</p></li>
+        <li><span class="ico-tile" aria-hidden="true"><svg class="ic"><use href="#i-msg"/></svg></span><p>Collaborated with teachers and school staff and welcomed guidance and feedback.</p></li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 6. SKILLS ============ -->
+<section class="sec" id="skills" aria-labelledby="skills-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker">Skills</p>
+      <h2 id="skills-title">What I Bring to the Classroom</h2>
+    </div>
+    <div class="skills-stack">
+      <div class="reveal">
+        <h3 class="group-title">Teaching, Technology and Digital Skills</h3>
+        <div class="skill-grid">
+          <div class="skill"><span class="ico-tile" aria-hidden="true"><svg class="ic"><use href="#i-bot"/></svg></span>AI and Automation</div>
+          <div class="skill"><span class="ico-tile" aria-hidden="true"><svg class="ic"><use href="#i-monitor"/></svg></span>ICT Integration</div>
+          <div class="skill"><span class="ico-tile" aria-hidden="true"><svg class="ic"><use href="#i-image"/></svg></span>AI Poster Creation</div>
+          <div class="skill"><span class="ico-tile" aria-hidden="true"><svg class="ic"><use href="#i-video"/></svg></span>Video Advertisements</div>
+        </div>
+      </div>
+      <div class="reveal">
+        <h3 class="group-title">Personal Strengths</h3>
+        <ul class="tags" style="list-style:none;margin:0;padding:0">
+          <li class="tag"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Self-motivated</li>
+          <li class="tag"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Innovative</li>
+          <li class="tag"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Honest</li>
+          <li class="tag"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Dependable</li>
+          <li class="tag"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Adaptable</li>
+          <li class="tag"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Patient</li>
+          <li class="tag"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Collaborative</li>
+        </ul>
+      </div>
+    </div>
+    <p class="statement reveal">I believe technology works best when it supports <strong>good teaching</strong>, meaningful interaction, and better learning experiences.</p>
+  </div>
+</section>
+
+<!-- ============ 7. LANGUAGES ============ -->
+<section class="sec" id="languages" aria-labelledby="lang-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="lang-row reveal">
+      <h2 id="lang-title">Languages</h2>
+      <ul class="lang-pills" style="list-style:none;margin:0;padding:0">
+        <li class="lang-pill"><svg class="ic" aria-hidden="true"><use href="#i-lang"/></svg>English</li>
+        <li class="lang-pill"><svg class="ic" aria-hidden="true"><use href="#i-lang"/></svg>Kiswahili</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. REFEREES ============ -->
+<section class="sec sec-mist" id="referees" aria-labelledby="ref-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker">Referees</p>
+      <h2 id="ref-title">Professional Referees</h2>
+    </div>
+    <div class="ref-grid">
+      <article class="ref reveal">
+        <div class="ref-top">
+          <span class="avatar" aria-hidden="true">JN</span>
+          <div>
+            <h3>Joseph Ndirangu</h3>
+            <p class="role">Deputy Headteacher, Kiboi Primary School</p>
+          </div>
+        </div>
+        <a class="ref-phone" href="tel:0725420260" aria-label="Call Joseph Ndirangu on 0725420260"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span>0725420260</span></a>
+      </article>
+      <article class="ref reveal">
+        <div class="ref-top">
+          <span class="avatar" aria-hidden="true">HJ</span>
+          <div>
+            <h3>Hans Juma</h3>
+            <p class="role">Tutor, Dazu Hub</p>
+          </div>
+        </div>
+        <a class="ref-phone" href="tel:0700392123" aria-label="Call Hans Juma on 0700392123"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span>0700392123</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. CONTACT ============ -->
+<section class="sec-navy on-dark contact" id="contact" aria-labelledby="contact-title">
+  <span class="deco-ring" aria-hidden="true"></span><span class="deco-ring two" aria-hidden="true"></span>
+  <div class="wrap">
+    <p class="kicker reveal">Contact</p>
+    <h2 id="contact-title" class="reveal">Let's Make Learning Meaningful.</h2>
+    <p class="lead reveal">I am open to primary school teaching opportunities where I can contribute, keep learning, and help learners reach their potential.</p>
+    <div class="contact-actions reveal">
+      <a class="btn btn-lt" href="mailto:dollyvalentine9@gmail.com"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>Email Me</a>
+      <a class="btn btn-line" href="tel:0115839771"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call Me</a>
+    </div>
+    <div class="contact-list reveal">
+      <div class="c-row">
+        <span class="ico-tile" aria-hidden="true"><svg class="ic"><use href="#i-phone"/></svg></span>
+        <div class="c-text"><small>Phone</small><span class="val" id="val-phone">0115839771</span></div>
+        <button class="copy-btn" type="button" data-copy="val-phone" aria-label="Copy phone number"><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg>Copy</button>
+      </div>
+      <div class="c-row">
+        <span class="ico-tile" aria-hidden="true"><svg class="ic"><use href="#i-mail"/></svg></span>
+        <div class="c-text"><small>Email</small><span class="val" id="val-email">dollyvalentine9@gmail.com</span></div>
+        <button class="copy-btn" type="button" data-copy="val-email" aria-label="Copy email address"><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg>Copy</button>
+      </div>
+    </div>
+    <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer on-dark">
+  <div class="wrap"><p>© 2026 Valentine Dolly. Teaching with purpose. Learning with technology.</p></div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ------------------------------------------------------------
+     EDIT ME: to show your own photo, save it next to this file
+     (for example "portrait.jpg") and put the file name below.
+     Leave it empty to keep the illustration.
+     ------------------------------------------------------------ */
+  var PORTRAIT = "val.jpeg";
+
+  var root = document.documentElement;
+  root.classList.add("js");
+
+  /* Portrait */
+  var img = document.getElementById("portrait-img");
+  var art = document.getElementById("portrait-art");
+  if (PORTRAIT && img) {
+    img.addEventListener("load", function () { img.hidden = false; if (art) art.hidden = true; });
+    img.addEventListener("error", function () { img.hidden = true; if (art) art.hidden = false; });
+    img.src = PORTRAIT;
+  }
+
+  /* Mobile menu */
+  var btn = document.getElementById("menu-btn");
+  var panel = document.getElementById("menu-panel");
+  function setMenu(open) {
+    if (!btn || !panel) return;
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    panel.hidden = !open;
+    btn.querySelector(".ic-open").hidden = open;
+    btn.querySelector(".ic-close").hidden = !open;
+  }
+  if (btn && panel) {
+    btn.addEventListener("click", function () { setMenu(panel.hidden); });
+    panel.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !panel.hidden) { setMenu(false); btn.focus(); }
+    });
+    window.addEventListener("resize", function () { if (window.innerWidth > 820) setMenu(false); });
+  }
+
+  /* Highlight the nav link for the section in view */
+  var links = document.querySelectorAll(".nav a[href^='#']");
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute("href").slice(1)] = a; });
+  if ("IntersectionObserver" in window) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting && map[en.target.id]) {
+          links.forEach(function (a) { a.removeAttribute("aria-current"); });
+          map[en.target.id].setAttribute("aria-current", "true");
+        }
+      });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    ["about", "experience", "skills", "contact"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) spy.observe(el);
+    });
+
+    /* Gentle scroll reveals */
+    var rv = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add("in"); rv.unobserve(en.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
+    document.querySelectorAll(".reveal").forEach(function (el) { rv.observe(el); });
+  } else {
+    document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("in"); });
+  }
+
+  /* Copy buttons */
+  var status = document.getElementById("copy-status");
+  var timer;
+  function say(msg) {
+    if (!status) return;
+    status.textContent = msg;
+    clearTimeout(timer);
+    timer = setTimeout(function () { status.textContent = ""; }, 3500);
+  }
+  function selectText(el) {
+    var r = document.createRange();
+    r.selectNodeContents(el);
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+  }
+  function legacyCopy(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    return ok;
+  }
+  document.querySelectorAll(".copy-btn").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var el = document.getElementById(b.getAttribute("data-copy"));
+      if (!el) return;
+      var text = el.textContent.trim();
+      var fail = function () { selectText(el); say("Selected. Press Ctrl+C (or Copy) to copy it."); };
+      var done = function () { say("Copied: " + text); };
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, function () { legacyCopy(text) ? done() : fail(); });
+        } else {
+          legacyCopy(text) ? done() : fail();
+        }
+      } catch (e) { legacyCopy(text) ? done() : fail(); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
